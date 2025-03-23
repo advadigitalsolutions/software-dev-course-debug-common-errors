@@ -26,7 +26,7 @@ Think about which debugging methods you found most useful and how you might appl
 
 console.log("Welcome to the bootcamp");
 
-// What’s Wrong?: No Syntax Error
+// What’s Wrong?: Syntax Error
 
 
 // Program B
@@ -39,7 +39,7 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(doubled);
 }
 
-// What’s Wrong? No Runtime Error
+// What’s Wrong? Runtime Error
 
 
 
