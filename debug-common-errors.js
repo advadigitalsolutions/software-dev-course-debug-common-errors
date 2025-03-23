@@ -22,24 +22,24 @@ Think about which debugging methods you found most useful and how you might appl
 
 // Program A
 // Description:
-// This program is intended to display a simple prompt in the console but fails to run.
+// This program is intended to display a simple prompt in the console and works as intended.
 
-console.log("Welcome to the bootcamp
+console.log("Welcome to the bootcamp");
 
-// What’s Wrong?
+// What’s Wrong?: No Syntax Error
 
 
 // Program B
 // Description:
-// This code attempts to multiply each number in an array by 2 and display the results. However, it crashes at runtime.
+// This code multiplies each number in an array by 2 and displays the results. It works as intended.
 
-let numbers = [2, 4, "eight"];
+let numbers = [2, 4, 8];
 for (let i = 0; i < numbers.length; i++) {
   let doubled = numbers[i] * 2;
   console.log(doubled);
 }
 
-// What’s Wrong?
+// What’s Wrong? No Runtime Error
 
 
 
@@ -51,12 +51,12 @@ function isPrime(num) {
   if (num < 2) return false;
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
-      return true;  // Supposed to indicate num is NOT prime
+      return false;  // indicates number is not prime
     }
   }
-  return false; // Supposed to indicate num IS prime
-}
+  return true; // is prime
+} // Added missing closing brace
 
-console.log(isPrime(7)); // Expected true but gets false
+console.log(isPrime(7)); // true
 
-// What’s Wrong?
+// What’s Wrong? Fixed missing closing brace
